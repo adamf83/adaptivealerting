@@ -1,0 +1,27 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Adaptive Alerting",
+        "description": "Select a numeric sensor to monitor. The integration will learn its normal range and alert when values deviate significantly.",
+        "data": {
+          "sensor_entity_id": "Sensor to monitor",
+          "learning_window_days": "Learning window (days)",
+          "sensitivity": "Sensitivity (standard deviations)"
+        },
+        "data_description": {
+          "sensor_entity_id": "Must be a numeric sensor (temperature, humidity, CO2, etc.)",
+          "learning_window_days": "How many days of history to use when building the baseline. Default: 14",
+          "sensitivity": "How many standard deviations from the mean triggers an alert. Lower = more sensitive. Default: 2.5"
+        }
+      }
+    },
+    "error": {
+      "not_numeric": "The selected sensor does not have a numeric state. Please choose a different sensor.",
+      "entity_not_found": "The selected entity could not be found."
+    },
+    "abort": {
+      "already_configured": "This sensor is already being monitored."
+    }
+  }
+}

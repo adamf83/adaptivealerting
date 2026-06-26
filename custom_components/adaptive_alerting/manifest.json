@@ -1,0 +1,11 @@
+{
+  "domain": "adaptive_alerting",
+  "name": "Adaptive Alerting",
+  "version": "0.1.0",
+  "documentation": "",
+  "dependencies": ["recorder"],
+  "codeowners": [],
+  "requirements": [],
+  "iot_class": "local_push",
+  "config_flow": true
+}

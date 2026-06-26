@@ -1,0 +1,11 @@
+reset_baseline:
+  name: Reset Baseline
+  description: Wipe the learned baseline and start relearning from scratch.
+  fields:
+    entry_id:
+      name: Entry
+      description: The Adaptive Alerting sensor to reset (optional, defaults to resetting all monitored sensors).
+      required: false
+      selector:
+        config_entry:
+          integration: adaptive_alerting
